@@ -23,7 +23,7 @@ function createWindow() {
     height: windowState.height,
     title: 'Stampery',
     titleBarStyle: 'hidden',
-    icon: __dirname + '/icon.png',
+    icon: __dirname + '/icons/icon.png',
     webPreferences: {
       nodeIntegration: false,
       preload: path.join(__dirname, './preload.js'),
@@ -44,7 +44,7 @@ function createWindow() {
 
 app.setName('Stampery')
 // app.setBadgeCount(count)
-app.dock.setIcon(__dirname + '/icon.png')
+app.dock.setIcon(__dirname + '/icons/icon.png')
 app.setAboutPanelOptions({
   applicationName: 'Stampery Wrapper',
   applicationVersion: '1.0.0',
