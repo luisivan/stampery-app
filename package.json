@@ -1,0 +1,17 @@
+{
+  "name": "Stampery",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "./node_modules/.bin/electron .",
+    "package": "./node_modules/.bin/electron-packager . --overwrite"
+  },
+  "dependencies": {
+    "electron": "^1.4.12",
+    "electron-window-state": "^4.0.0",
+    "intertron": "^1.0.1"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron-packager": "^8.4.0"
+  }
+}
