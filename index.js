@@ -2,9 +2,7 @@ const { app, Menu, BrowserWindow } = require('electron')
 const path = require('path')
 const windowStateKeeper = require('electron-window-state')
 
-const Intertron = require('intertron')
-
-new Intertron({})
+const DnDHandler = require('./dnd')
 
 const stamperyURL = 'https://stamp.io/sign-in'
 
@@ -32,7 +30,8 @@ function createWindow() {
 
   windowState.manage(win)
 
-  // win.setMenu(null)
+  new DnDHandler(app, win)
+
   win.loadURL(stamperyURL)
 
   // win.webContents.openDevTools()

@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "./node_modules/.bin/electron .",
-    "package": "./node_modules/.bin/electron-packager . --overwrite"
+    "package": "./node_modules/.bin/electron-packager . --overwrite --icon icons/Stampery.icns --extend-info Info.plist"
   },
   "dependencies": {
     "electron": "^1.4.12",
-    "electron-window-state": "^4.0.0",
-    "intertron": "^1.0.1"
+    "electron-window-state": "^4.0.0"
   },
   "devDependencies": {
     "devtron": "^1.4.0",
